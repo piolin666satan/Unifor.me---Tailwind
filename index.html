@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Uni.forme - Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="logo_sin_fondo.png"
+      type="image/png"
+    />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      /* Variables CSS para paleta */
+      :root {
+        --color-primario: #004080;
+        --color-dos: #ffd500;
+        --color-detalles: #ffffff;
+        --color-textooscuro: #222;
+        --texto-claro: #666;
+      }
+
+      /* Cursor parpadeante para posible efecto */
+      .typing-cursor {
+        animation: blink 1s step-start infinite;
+      }
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+      }
+    </style>
+    
+  </head>
+  <body class="bg-white text-[var(--color-textooscuro)] overflow-x-hidden relative pb-20">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full px-6 py-4 bg-[var(--color-primario)] flex justify-between items-center shadow-md z-50">
+      <a href="#" class="text-3xl font-extrabold text-[var(--color-dos)] hover:scale-110 transition-transform">
+        unifor.me
+      </a>
+      <nav class="hidden md:flex">
+        <a href="index.html" class="text-lg mx-4 text-[var(--color-dos)] border-b-2 border-[var(--color-dos)]">Inicio</a>
+        <a href="#quienes-somos" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Quiénes somos
+        </a>
+        <a href="catalogo.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Catalogo
+        </a>
+                <a href="donar.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Donaciones
+        </a>
+                <a href="reparar.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Reparar
+        </a>
+      </nav>
+      <div class="items-center hidden ml-6 md:flex">
+        <input
+          type="search"
+          placeholder="Buscar..."
+          class="px-3 py-1 rounded-l-md border border-r-0 border-[var(--color-dos)] focus:outline-none focus:ring-2 focus:ring-[var(--color-dos)]"
+        />
+        <button
+          class="bg-[var(--color-dos)] text-[var(--color-primario)] px-4 py-1 rounded-r-md font-semibold hover:bg-yellow-400 transition"
+        >
+          Buscar
+        </button>
+      </div>
+      
+    </header>
+
+    <!-- HOME -->
+    <section
+      id="home"
+      class="pt-28 px-6 md:px-20 flex flex-col md:flex-row items-center justify-center gap-12 min-h-screen bg-gradient-to-b from-white to-[#f0f4ff]"
+    >
+      <div class="flex justify-center flex-1">
+        <img
+          src="img/logoo.png"
+          alt="uni.forme logo"
+          class="rounded-full max-w-xs shadow-lg hover:shadow-[0_0_40px_var(--color-dos)] transition-shadow duration-300"
+        />
+      </div>
+      <div class="flex-1 max-w-xl">
+        <h1 class="text-5xl font-bold leading-tight text-[var(--color-primario)]">
+          En esta página encontrarás la ayuda que estás buscando para hacer más fácil el regreso a clase.
+        </h1>
+        <p class="mt-6 text-lg text-[var(--color-textooscuro)] leading-relaxed">
+          uni.forme es tu plataforma para comprar, donar, intercambiar y reparar prendas de uso escolar, pensada para estudiantes y tutores que quieren comodidad y ahorro sin sacrificar calidad.
+        </p>
+        <a
+          href="#quienes-somos"
+          class="inline-block mt-8 px-7 py-3 border-2 border-[var(--color-dos)] rounded-full text-[var(--color-dos)] font-semibold hover:bg-[var(--color-dos)] hover:text-[var(--color-primario)] transition hover:scale-105 shadow-lg tracking-wider"
+        >
+          Conoce más
+        </a>
+      </div>
+    </section>
+
+    <!-- Carrusel-->
+
+<div class="relative flex w-full gap-4 py-6 overflow-x-auto">
+	<img class="object-cover object-center h-48 rounded-sm aspect-video dark:bg-gray-500" src="img/im1.jpg" alt="Image 1">
+	<img class="object-cover object-center h-48 rounded-sm aspect-video dark:bg-gray-500" src="img/im2.jpg" alt="Image 2">
+	<img class="object-cover object-center h-48 rounded-sm aspect-video dark:bg-gray-500" src="img/im3.jpg" alt="Image 3">
+	<img class="object-cover object-center h-48 rounded-sm aspect-video dark:bg-gray-500" src="img/im4.jpg" alt="Image 4">
+</div>
+
+    <!-- QUIÉNES SOMOS -->
+    <section
+      id="quienes-somos"
+      class="px-6 mt-20 md:px-20"
+    >
+      <div class="max-w-5xl mx-auto bg-white border-2 border-[var(--color-primario)] rounded-lg p-8 shadow-lg flex flex-col md:flex-row gap-12">
+        <div class="flex-1">
+          <h2 class="text-4xl font-bold mb-4 text-[var(--color-primario)]">
+            ¿Qué es UNIFOR.ME?
+          </h2>
+          <p class="text-[var(--color-textooscuro)] leading-relaxed">
+            Es una plataforma que te permite comprar, donar, intercambiar y reparar prendas de uso escolar para la comodidad tanto de estudiantes como de tutores/padres.
+          </p>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-4xl font-bold mb-4 text-[var(--color-primario)]">
+            Nuestro objetivo
+          </h2>
+          <p class="text-[var(--color-textooscuro)] leading-relaxed">
+            Debido a las condiciones económicas que deben enfrentar padres de familia y tutores cada vez que se reinicia el año escolar, UNIFOR.ME plantea la posibilidad de ofrecer a los estudiantes y padres un amplio abanico de posibilidades para propiciar condiciones de igualdad en el aprendizaje, proporcionando nuevas formas de obtener los uniformes escolares.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section
+      id="contacto"
+      class="px-6 mt-20 mb-32 md:px-20"
+    >
+      <h2 class="text-4xl font-bold text-[var(--color-primario)] mb-6 text-center">Contacto</h2>
+      <p class="text-[var(--color-textooscuro)] text-center mb-10">¿Dudas, inquietudes?
+Contáctanos en nuestras redes sociales o diligencia en nuestro formulario para más información.</p>
+      <form class="max-w-3xl mx-auto bg-white border-2 border-[var(--color-primario)] rounded-lg p-8 shadow-lg flex flex-col gap-6">
+        <input
+          type="text"
+          placeholder="Nombre completo"
+          class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--color-primario)]"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Correo electrónico"
+          class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--color-primario)]"
+          required
+        />
+        <textarea
+          placeholder="Tu mensaje"
+          rows="5"
+          class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--color-primario)]"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-[var(--color-primario)] text-[var(--color-dos)] font-semibold py-3 rounded-md hover:bg-blue-900 transition"
+        >
+          Enviar
+        </button>
+      </form>
+    </section>
+
+    <!-- Features-->
+
+<section class="px-4 py-12 bg-white md:px-12 lg:px-20">
+  <h2 class="text-2xl md:text-3xl font-bold text-center text-[#004080] mb-10">¿Por qué elegir UNIFOR.ME?</h2>
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+    <!-- Alta Calidad -->
+    <div class="flex flex-col items-center text-center p-6 border rounded-2xl shadow transition hover:bg-gradient-to-br hover:from-[#ffd500] hover:via-[#fff8b0] hover:to-[#ffffff]">
+      <img src="img/checklist-3d-icon-illustration-png.png" alt="Alta calidad" class="w-16 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-[#004080]">Alta Calidad</h3>
+      <p class="text-[#666] mt-2 text-sm">
+        Nuestros uniformes aguantan el día a día sin perder forma ni color.
+      </p>
+    </div>
+
+    <!-- Diseños escolares -->
+    <div class="flex flex-col items-center text-center p-6 border rounded-2xl shadow transition hover:bg-gradient-to-br hover:from-[#ffcc00] hover:via-[#fff1a8] hover:to-[#ffffff]">
+      <img src="img/a-paint-brush-and-palette-on-a-black-background-png.webp" alt="Diseños escolares" class="w-16 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-[#004080]">Diseños escolares</h3>
+      <p class="text-[#666] mt-2 text-sm">
+        Podrás encontrar tu uniforme según la IE a la que pertenezcas.
+      </p>
+    </div>
+
+    <!-- Uniformes de segunda mano -->
+    <div class="flex flex-col items-center text-center p-6 border rounded-2xl shadow transition hover:bg-gradient-to-br hover:from-[#c7f0b0] hover:via-[#e1f8d5] hover:to-[#ffffff]">
+      <img src="img/elegant-modern-recycling-symbol-green-gradient-transparent-background-genuine-png.png" alt="Segunda mano" class="w-16 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-[#004080]">Uniformes de segunda mano</h3>
+      <p class="text-[#666] mt-2 text-sm">
+        Darle una segunda oportunidad a las prendas puede convertirse en una sonrisa.
+      </p>
+    </div>
+
+    <!-- Donaciones sociales -->
+    <div class="flex flex-col items-center text-center p-6 border rounded-2xl shadow transition hover:bg-gradient-to-br hover:from-[#ffd7d7] hover:via-[#ffeaea] hover:to-[#ffffff]">
+      <img src="img/vibrant-artistic-white-handshake-icon-with-business-partnership-agreement-isolated-genuine-png.webp" alt="Donaciones sociales" class="w-16 h-16 mb-4">
+      <h3 class="font-semibold text-lg text-[#004080]">Donaciones sociales</h3>
+      <p class="text-[#666] mt-2 text-sm">
+        Espacios con igualdad de condiciones para todos los estudiantes.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Seccion CTA-->
+<section class="bg-gradient-to-r from-[#004080] to-[#0066cc] py-16 px-6 md:px-20 text-white text-center rounded-3xl shadow-xl mx-4 my-10">
+  <h2 class="mb-4 text-3xl font-bold md:text-4xl">¿Listo para transformar tu uniforme?</h2>
+  <p class="text-lg md:text-xl text-[#f0f0f0] mb-8">
+    Únete a <span class="font-semibold">uni.forme</span> hoy mismo o explora nuestra tienda.
+  </p>
+
+  <div class="flex flex-col justify-center gap-4 sm:flex-row">
+    <a href="#productos" class="inline-flex items-center justify-center gap-2 bg-[#ffd500] text-[#004080] font-bold py-3 px-6 rounded-full text-lg shadow hover:shadow-lg hover:bg-yellow-400 transition-transform transform hover:scale-105">
+      🛒 Ver productos
+    </a>
+    <a href="#registro" class="inline-flex items-center justify-center gap-2 bg-white text-[#004080] font-bold py-3 px-6 rounded-full text-lg shadow hover:shadow-lg hover:bg-[#f1f1f1] transition-transform transform hover:scale-105">
+      ✍️ Crear cuenta
+    </a>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+<footer class="text-gray-600 body-font">
+  <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+    <div class="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
+      <a href="Uniforme_tailwin.html" class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+        <img src="img/logoo.png" alt="Logo Uni.forme" class="w-20 h-20 p-1 rounded-full>
+        <span class="ml-3 text-xl">Uni.forme</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">Viste tu esencia. Crea tu personalidad.</p>
+    </div>
+    <div class="flex flex-wrap flex-grow order-first -mb-10 text-center md:pr-20 md:text-left">
+
+      <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font">Explora</h2>
+        <nav class="mb-10 list-none">
+          <li>
+            <a href="Uniforme_tailwin.html" class="text-gray-600 hover:text-gray-800">Inicio</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Quienes Somos</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Uniformes</a>
+          </li>
+          <li>
+            <a href="#"" class="text-gray-600 hover:text-gray-800">Donaciones</a>
+          </li>
+                    <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Catalogo</a>
+          </li>
+                    <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Contacto</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+      <p class="text-sm text-center text-gray-500 sm:text-left">© 2025 uni.forme · Todos los derechos reservados
+        <a href="#" rel="noopener noreferrer" class="text-[#ffd500] ml-1" target="_blank">Política de privacidad || Términos y condiciones</a>
+      </p>
+      <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+        <a href="#" class="text-[#004080]">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="ml-3 text-[#004080]">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="ml-3 text-[#004080]">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bottom Bar para móviles -->
+    <div
+      class="md:hidden fixed bottom-0 left-0 w-full bg-[var(--color-primario)] border-t-2 border-[var(--color-dos)] flex justify-around py-2 z-50 shadow-lg"
+    >
+      <a href="Uniforme_tailwin.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-house"></i> Inicio
+      </a>
+      <a href="catalogo.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Catalogo
+      </a>
+            <a href="#Donar" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Donar
+      </a>
+            <a href="#Reparar" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Reparar
+      </a>
+    </div>
+
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+  </body>
+</html>

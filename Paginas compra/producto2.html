@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unifor.me - Compra Uniformes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet" />
+                <link
+      rel="icon"
+      href="/logo_sin_fondo.png"
+      type="image/png"
+    />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Variables CSS para paleta */
+        :root {
+            --color-primario: #004080;
+            --color-dos: #ffd500;
+            --color-detalles: #ffffff;
+            --color-textooscuro: #222;
+            --texto-claro: #666;
+        }
+
+        /* Cursor parpadeante para posible efecto */
+        .typing-cursor {
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-[var(--color-textooscuro)] overflow-x-hidden relative pb-20">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full px-6 py-4 bg-[var(--color-primario)] flex justify-between items-center shadow-md z-50">
+      <a href="#" class="text-3xl font-extrabold text-[var(--color-dos)] hover:scale-110 transition-transform">
+        unifor.me
+      </a>
+      <nav class="hidden md:flex">
+        <a href="/index.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">Inicio</a>
+        <a href="/index.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Quiénes somos
+        </a>
+        <a href="/catalogo.html" class="mx-4 text-lg hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Catalogo
+        </a>
+                <a href="#donaciones" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Donaciones
+        </a>
+                <a href="#reparar" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Reparar
+        </a>
+      </nav>
+      <div class="items-center hidden ml-6 md:flex">
+        <input
+          type="search"
+          placeholder="Buscar..."
+          class="px-3 py-1 rounded-l-md border border-r-0 border-[var(--color-dos)] focus:outline-none focus:ring-2 focus:ring-[var(--color-dos)]"
+        />
+        <button
+          class="bg-[var(--color-dos)] text-[var(--color-primario)] px-4 py-1 rounded-r-md font-semibold hover:bg-yellow-400 transition"
+        >
+          Buscar
+        </button>
+      </div>
+      
+    </header>
+    
+
+<section class="overflow-hidden text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap mx-auto lg:w-4/5">
+      <img alt="ecommerce" class="object-cover object-center w-full h-64 rounded lg:w-1/2 lg:h-auto" src="/img/nuestros uniformes/Captura2.PNG">
+      <div class="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
+        <h2 class="text-sm tracking-widest text-gray-500 title-font">I.E Progresar</h2>
+        <h1 class="mb-1 text-3xl font-medium text-gray-900 title-font">Uniforme escolar rojo</h1>
+        <div class="flex mb-4">
+          <span class="flex items-center">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-blue-900" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-blue-900" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-blue-900" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-blue-900" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-blue-900" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <span class="ml-3 text-gray-600">3 Estrellas</span>
+          </span>
+
+        </div>
+        <p class="leading-relaxed"> Este uniforme oficial del Colegio Tres Estrellas combina estilo y funcionalidad. Incluye una camisa blanca con cuello clásico y un pantalón o falda en tono rojo intenso, fabricado en tela resistente al uso diario. Perfecto para estudiantes activos que necesitan comodidad y presentación durante toda la jornada escolar.</p>
+        <div class="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-100">
+          <div class="flex">
+            <span class="mr-3">Colores</span>
+            <button class="w-6 h-6 bg-red-700 border-2 rounded-full focus:outline-none"></button>
+            <button class="w-6 h-6 ml-1 bg-[var(--color-textooscuro)] border-2 border-gray-300 rounded-full focus:outline-none"></button>
+            <button class="w-6 h-6 ml-1 bg-[var(--color-detalles)] border-2 border-gray-300 rounded-full focus:outline-none"></button>
+          </div>
+          <div class="flex items-center ml-6">
+            <span class="mr-3">Talla</span>
+            <div class="relative">
+              <select class="py-2 pl-3 pr-10 text-base border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+              <span class="absolute top-0 right-0 flex items-center justify-center w-10 h-full text-center text-gray-600 pointer-events-none">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <span class="text-2xl font-medium text-gray-900 title-font">$100.000 COP
+
+</span>
+          <a href="/iniciarSeccion.html" class="flex px-6 py-2 ml-auto text-blue-900 bg-[var(--color-dos)] border-0 rounded focus:outline-none hover:bg-yellow-400 transition">Comprar</a>
+          <button class="inline-flex items-center justify-center w-10 h-10 p-0 ml-4 text-gray-500 bg-gray-200 border-0 rounded-full">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+<footer class="text-gray-600 body-font">
+  <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+    <div class="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
+      <a href="/index.html" class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+        <img src="/img/logoo.png" alt="Logo Uni.forme" class="w-20 h-20 p-1 rounded-full">
+        <span class="ml-3 text-xl">Uni.forme</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">Viste tu esencia. Crea tu personalidad.</p>
+    </div>
+    <div class="flex flex-wrap flex-grow order-first -mb-10 text-center md:pr-20 md:text-left">
+
+      <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font">Explora</h2>
+        <nav class="mb-10 list-none">
+          <li>
+            <a href="/index.html" class="text-gray-600 hover:text-gray-800">Inicio</a>
+          </li>
+          <li>
+            <a href="/index.html" class="text-gray-600 hover:text-gray-800">Quienes Somos</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Uniformes</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Donaciones</a>
+          </li>
+                    <li>
+            <a href="/catalogo.html" class="text-gray-600 hover:text-gray-800">Catalogo</a>
+          </li>
+                    <li>
+            <a href="/index.html" class="text-gray-600 hover:text-gray-800">Contacto</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+      <p class="text-sm text-center text-gray-500 sm:text-left">© 2025 uni.forme · Todos los derechos reservados
+        <a href="#" rel="noopener noreferrer" class="text-[#ffd500] ml-1" target="_blank">Política de privacidad || Términos y condiciones</a>
+      </p>
+      <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+        <a href="#" class="text-[#004080]">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="ml-3 text-[#004080]">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="ml-3 text-[#004080]">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+    <!-- Bottom Bar para móviles -->
+    <div
+      class="md:hidden fixed bottom-0 left-0 w-full bg-[var(--color-primario)] border-t-2 border-[var(--color-dos)] flex justify-around py-2 z-50 shadow-lg"
+    >
+      <a href="index.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-house"></i> Inicio
+      </a>
+      <a href="/catalogo.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Catalogo
+      </a>
+            <a href="#Donar" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Donar
+      </a>
+            <a href="#Reparar" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Reparar
+      </a>
+    </div>
+
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

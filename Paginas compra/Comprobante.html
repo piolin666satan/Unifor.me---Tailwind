@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprobante de Compra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link
+      rel="icon"
+      href="/img/logoo.png"
+      type="image/png"
+    />
+    <style>
+      :root {
+        --color-dos: #ffd500;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen text-gray-800 bg-gray-50">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
+      <h1 class="text-xl font-bold text-blue-900">UNIFOR.ME</h1>
+    </nav>
+
+    <!-- Contenido del comprobante -->
+    <main class="flex items-center justify-center flex-grow p-8">
+      <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="mb-4 text-2xl font-semibold text-blue-900">¡Compra realizada con éxito!</h2>
+        <p class="mb-2">Gracias por confiar en <strong>UNIFOR.ME</strong>.</p>
+        <p class="mb-2">Hemos recibido tu solicitud y la estamos procesando.</p>
+        <p class="mb-2">Pronto recibirás un correo con los detalles de tu compra.</p>
+        <p class="mt-4 text-sm text-gray-500">Este comprobante es genérico para todas las compras.</p>
+      </div>
+    </main>
+
+    <!-- Botón flotante -->
+    <a href="/catalogo.html" class="fixed bottom-6 right-6 bg-[var(--color-dos)] text-blue-900 font-medium px-4 py-3 rounded-full shadow-lg hover:bg-yellow-400 transition">
+      Volver al catálogo
+    </a>
+  </body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unifor.me - Catalogo Uniformes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet" />
+            <link
+      rel="icon"
+      href="logo_sin_fondo.png"
+      type="image/png"
+    />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        main {
+          background-image: url(collage.uniforme.png);
+        }
+        
+        
+
+        /* Variables CSS para paleta */
+        :root {
+            --color-primario: #004080;
+            --color-dos: #ffd500;
+            --color-detalles: #ffffff;
+            --color-textooscuro: #222;
+            --texto-claro: #666;
+        }
+
+        /* Cursor parpadeante para posible efecto */
+        .typing-cursor {
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-[var(--color-textooscuro)] overflow-x-hidden relative pb-20">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full px-6 py-4 bg-[var(--color-primario)] flex justify-between items-center shadow-md z-50">
+      <a href="#" class="text-3xl font-extrabold text-[var(--color-dos)] hover:scale-110 transition-transform">
+        unifor.me
+      </a>
+      <nav class="hidden md:flex">
+        <a href="index.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">Inicio</a>
+        <a href="index.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Quiénes somos
+        </a>
+        <a href="catalogo.html" class="text-lg mx-4 text-[var(--color-dos)] border-b-2 border-[var(--color-dos)]">
+          Catalogo
+        </a>
+                <a href="donar.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Donaciones
+        </a>
+                <a href="reparar.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+          Reparar
+        </a>
+      </nav>
+      <div class="items-center hidden ml-6 md:flex">
+        <input
+          type="search"
+          placeholder="Buscar..."
+          class="px-3 py-1 rounded-l-md border border-r-0 border-[var(--color-dos)] focus:outline-none focus:ring-2 focus:ring-[var(--color-dos)]"
+        />
+        <button
+          class="bg-[var(--color-dos)] text-[var(--color-primario)] px-4 py-1 rounded-r-md font-semibold hover:bg-yellow-400 transition"
+        >
+          Buscar
+        </button>
+      </div>
+      
+    </header>
+
+<main class="min-h-screen bg-gray-100 text-[var(--color-textooscuro)] font-poppins flex flex-col pt-20">
+  <section class="container flex flex-col py-8 mx-auto md:flex-row">
+    
+    <!-- BARRA LATERAL DE FILTROS -->
+    <aside class="w-full p-4 mb-6 bg-white rounded-lg shadow md:w-1/4 md:mb-0">
+      <h2 class="text-lg font-bold mb-4 text-[var(--color-primario)]">Filtrar por</h2>
+
+      <!-- Filtrar por edad -->
+      <div class="mb-6">
+        <h3 class="font-semibold text-sm text-[var(--color-primario)] mb-2">Edad</h3>
+        <ul class="space-y-1 text-sm">
+          <li><label><input type="checkbox" class="mr-2">3 a 4 años</label></li>
+          <li><label><input type="checkbox" class="mr-2">5 a 6 años</label></li>
+          <li><label><input type="checkbox" class="mr-2">7 a 10 años</label></li>
+          <li><label><input type="checkbox" class="mr-2">11 a 14 años</label></li>
+        </ul>
+      </div>
+
+      <!-- Filtrar por marca -->
+      <div class="mb-6">
+        <h3 class="font-semibold text-sm text-[var(--color-primario)] mb-2">Institucion</h3>
+        <ul class="space-y-1 text-sm">
+          <li><label><input type="checkbox" class="mr-2">I.E Progresar</label></li>
+          <li><label><input type="checkbox" class="mr-2">I.E Vida y paz</label></li>
+          <li><label><input type="checkbox" class="mr-2">I.E Pascual bravo</label></li>
+        </ul>
+      </div>
+
+      <!-- Filtrar por color -->
+      <div class="mb-6">
+        <h3 class="font-semibold text-sm text-[var(--color-primario)] mb-2">Color</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="w-5 h-5 bg-pink-500 border rounded-full"></span>
+          <span class="w-5 h-5 bg-blue-500 border rounded-full"></span>
+          <span class="w-5 h-5 bg-yellow-300 border rounded-full"></span>
+          <span class="w-5 h-5 bg-red-500 border rounded-full"></span>
+          <span class="w-5 h-5 bg-gray-700 border rounded-full"></span>
+        </div>
+      </div>
+
+      <!-- Filtrar por precio -->
+      <div>
+        <h3 class="font-semibold text-sm text-[var(--color-primario)] mb-2">Precio</h3>
+        <ul class="space-y-1 text-sm">
+          <li><label><input type="radio" name="precio" class="mr-2">Hasta $65.000</label></li>
+          <li><label><input type="radio" name="precio" class="mr-2">$65.000 - $100.000</label></li>
+          <li><label><input type="radio" name="precio" class="mr-2">Más de $100.000</label></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- CATÁLOGO DE PRODUCTOS -->
+    <section class="w-full p-4 md:w-3/4">
+      <h2 class="text-2xl font-semibold text-center mb-6 text-[var(--color-primario)]">Catálogo de Uniformes</h2>
+  <!-- Aquí empieza el grid correctamente -->
+  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+    <!-- Producto 1 -->
+    <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/Captura.PNG" width="115" alt="Polo Escolar" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold text-[var(--color-primario)]">Uniforme escolar azul</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$125.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto1.html" method="get">
+        <input type="hidden" name="producto" value="Polo Escolar">
+        <input type="hidden" name="precio" value="25000">
+        <form action="Paginas compra/producto1.html" method="get">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+          </form>
+      </form>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/Captura2.PNG" width="124" alt="Falda Escolar" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold text-[var(--color-primario)]">Uniforme escolar rojo</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$100.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto2.html" method="get">
+        <input type="hidden" name="producto" value="Falda Escolar">
+        <input type="hidden" name="precio" value="30000">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+      </form>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/diario-padua-768x1251.jpg" width="79" alt="Pantalón Escolar" class="mb-4 rounded">
+      <h3 class=" text-lg font-semibold text-[var(--color-primario)]">Uniforme escolar vino tinto</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$70.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto3.html" method="get">
+        <input type="hidden" name="producto" value="Pantalón Escolar">
+        <input type="hidden" name="precio" value="28000">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+      </form>
+    </div>
+
+        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/diario-san-rafael-768x1251.jpg" width="85" alt="Pantalón Escolar" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold text-[var(--color-primario)]">Uniforme blanco diario</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$65.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto4.html" method="get">
+        <input type="hidden" name="producto" value="Pantalón Escolar">
+        <input type="hidden" name="precio" value="28000">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+      </form>
+    </div>
+        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/School uniform PNG _ ShopLook.jpeg" width="80" alt="Pantalón Escolar" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold text-[var(--color-primario)]">Uniforme escolar falda azul corbata</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$78.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto5.html" method="get">
+        <input type="hidden" name="producto" value="Pantalón Escolar">
+        <input type="hidden" name="precio" value="28000">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+      </form>
+    </div>
+    
+        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/uniforme-escolar-sincelejo.jpg" width="100" alt="Pantalón Escolar" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold text-[var(--color-primario)]">Uniforme azul diario</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$67.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto6.html" method="get">
+        <input type="hidden" name="producto" value="Pantalón Escolar">
+        <input type="hidden" name="precio" value="28000">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+      </form>
+    </div>
+
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/H995a13a6827b496e9959e73c033934101.jpg_720x720q50.avif" width="120" alt="Pantalón Escolar" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold text-[var(--color-primario)]">Uniforme escolar azul oscuro</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$89.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto7.html" method="get">
+        <input type="hidden" name="producto" value="Pantalón Escolar">
+        <input type="hidden" name="precio" value="28000">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+      </form>
+    </div>
+    
+                <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/H3fd377ef1b4f45e4a3d271dd1fc66a957.jpg_720x720q50.avif" width="120" alt="Pantalón Escolar" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold text-[var(--color-primario)]">Uniforme escolar marron claro</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$89.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto8.html" method="get">
+        <input type="hidden" name="producto" value="Pantalón Escolar">
+        <input type="hidden" name="precio" value="28000">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+      </form>
+    </div>
+
+                <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow">
+      <img src="img/nuestros uniformes/Camada-3_300x400.webp" width="110" alt="Pantalón Escolar" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold text-[var(--color-primario)]">Uniforme buzo Fisica</h3>
+      <p class="text-[var(--color-textooscuro)] font-bold">$89.000 COP</p>
+      <form class="w-full mt-2" action="Paginas compra/producto9.html" method="get">
+        <input type="hidden" name="producto" value="Pantalón Escolar">
+        <input type="hidden" name="precio" value="28000">
+        <button type="submit"
+          class="w-full bg-[var(--color-dos)] text-[var(--color-primario)] py-2 rounded "><strong>Comprar</strong></button>
+      </form>
+    </div>
+
+    
+
+  </div> <!-- Fin del grid -->
+</section>
+</section> <!-- Fin del catálogo -->
+</main>
+
+
+    <!-- Seccion CTA-->
+<section class="bg-gradient-to-r from-[#004080] to-[#0066cc] py-16 px-6 md:px-20 text-white text-center rounded-3xl shadow-xl mx-4 my-10">
+  <h2 class="mb-4 text-3xl font-bold md:text-4xl">¿Listo para transformar tu uniforme?</h2>
+  <p class="text-lg md:text-xl text-[#f0f0f0] mb-8">
+    Únete a <span class="font-semibold">uni.forme</span> hoy mismo o explora nuestra tienda.
+  </p>
+
+  <div class="flex flex-col justify-center gap-4 sm:flex-row">
+    <a href="#productos" class="inline-flex items-center justify-center gap-2 bg-[#ffd500] text-[#004080] font-bold py-3 px-6 rounded-full text-lg shadow hover:shadow-lg hover:bg-yellow-400 transition-transform transform hover:scale-105">
+      🛒 Ver productos
+    </a>
+    <a href="#registro" class="inline-flex items-center justify-center gap-2 bg-white text-[#004080] font-bold py-3 px-6 rounded-full text-lg shadow hover:shadow-lg hover:bg-[#f1f1f1] transition-transform transform hover:scale-105">
+      ✍️ Crear cuenta
+    </a>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+        <div
+            class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+            <div class="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
+                <a href="index.html"
+                    class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+                    <img src="img/logoo.png" alt="Logo Uni.forme"
+                        class="w-20 h-20 p-1 rounded-full">
+                    <span class="ml-3 text-xl">Uni.forme</span>
+                </a>
+                <p class="mt-2 text-sm text-gray-500">Viste tu esencia. Conserva tu personalidad.</p>
+            </div>
+            <div class="flex flex-wrap flex-grow order-first -mb-10 text-center md:pr-20 md:text-left">
+
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font">Explora</h2>
+                    <nav class="mb-10 list-none">
+                        <li>
+                            <a href="index.html" class="text-gray-600 hover:text-gray-800">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="text-gray-600 hover:text-gray-800">Quienes Somos</a>
+                        </li>
+                        <li>
+                            <a href="catalogo.html" class="text-gray-600 hover:text-gray-800">Uniformes</a>
+                        </li>
+                        <li>
+                            <a href="donar.html"" class="text-gray-600 hover:text-gray-800">Donaciones</a>
+                        </li>
+                        <li>
+                            <a href="catalogo.html" class="text-gray-600 hover:text-gray-800">Catalogo</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="text-gray-600 hover:text-gray-800">Contacto</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-100">
+            <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+                <p class="text-sm text-center text-gray-500 sm:text-left">© 2025 uni.forme · Todos los derechos
+                    reservados
+                    <a href="#" rel="noopener noreferrer" class="text-[#ffd500] ml-1" target="_blank">Política de
+                        privacidad || Términos y condiciones</a>
+                </p>
+                <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                    <a href="#" class="text-[#004080]">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="ml-3 text-[#004080]">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="ml-3 text-[#004080]">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+    <!-- Bottom Bar para móviles -->
+    <div
+      class="md:hidden fixed bottom-0 left-0 w-full bg-[var(--color-primario)] border-t-2 border-[var(--color-dos)] flex justify-around py-2 z-50 shadow-lg"
+    >
+      <a href="index.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-house"></i> Inicio
+      </a>
+      <a href="#Comprar" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Catalogo
+      </a>
+            <a href="#Donar" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Donar
+      </a>
+            <a href="#Reparar" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Reparar
+      </a>
+    </div>
+
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+  </body>
+
+</html>

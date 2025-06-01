@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unifor.me - Reparaciones</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet" />
+            <link
+      rel="icon"
+      href="logo_sin_fondo.png"
+      type="image/png"
+    />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        /* Variables CSS para paleta */
+        :root {
+            --color-primario: #004080;
+            --color-dos: #ffd500;
+            --color-detalles: #ffffff;
+            --color-textooscuro: #222;
+            --texto-claro: #666;
+        }
+
+        /* Cursor parpadeante para posible efecto */
+        .typing-cursor {
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-white text-[var(--color-textooscuro)] overflow-x-hidden relative pb-20">
+
+
+
+    <!-- HEADER -->
+    <header
+        class="fixed top-0 left-0 w-full px-6 py-4 bg-[var(--color-primario)] flex justify-between items-center shadow-md z-50">
+        <a href="#" class="text-3xl font-extrabold text-[var(--color-dos)] hover:scale-110 transition-transform">
+            unifor.me
+        </a>
+        <nav class="hidden md:flex">
+            <a href="index.html"
+                class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">Inicio</a>
+            <a href="index.html"
+                class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+                Quiénes somos
+            </a>
+            <a href="catalogo.html" class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+                Catalogo
+            </a>
+            <a href="donar.html"
+                class="text-lg mx-4 hover:text-[var(--color-dos)] hover:border-b-2 border-[var(--color-dos)] transition-all">
+                Donaciones
+            </a>
+            <a href="#reparar"
+                class="text-lg mx-4 text-[var(--color-dos)] border-b-2 border-[var(--color-dos)]">
+                Reparar
+            </a>
+        </nav>
+        <div class="items-center hidden ml-6 md:flex">
+            <input type="search" placeholder="Buscar..."
+                class="bg-[var(--color-detalles)] px-3 py-1 rounded-l-md border border-r-0 border-[var(--color-dos)] focus:outline-none focus:ring-2 focus:ring-[var(--color-dos)]" />
+            <button
+                class="bg-[var(--color-dos)] text-[var(--color-primario)] px-4 py-1 rounded-r-md font-semibold hover:bg-yellow-400 transition">
+                Buscar
+            </button>
+        </div>
+
+    </header>
+
+    <!--Login card-->
+    <section>
+        <div class="flex flex-col justify-center min-h-screen py-6 bg-gray-100 sm:py-12">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                <div
+                    class="absolute inset-0 transform -skew-y-6 shadow-lg bg-gradient-to-r from-blue-300 to-blue-600 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+                </div>
+                <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                    <div class="max-w-md mx-auto">
+                        <div>
+                            <h1 class="text-2xl font-semibold">Iniciar sesión</h1>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="py-8 space-y-4 text-base leading-6 text-gray-700 sm:text-lg sm:leading-7">
+                                <div class="relative">
+                                    <input autocomplete="off" id="email" name="email" type="text"
+                                        class="w-full h-10 text-gray-900 placeholder-transparent border-b-2 border-gray-300 peer focus:outline-none focus:borer-rose-600"
+                                        placeholder="Email address" />
+                                    <label for="email"
+                                        class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Usuario</label>
+                                </div>
+                                <div class="relative">
+                                    <input autocomplete="off" id="password" name="password" type="password"
+                                        class="w-full h-10 text-gray-900 placeholder-transparent border-b-2 border-gray-300 peer focus:outline-none focus:borer-rose-600"
+                                        placeholder="Password" />
+                                    <label for="password"
+                                        class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Contraseña</label>
+                                </div>
+                                <div class="button">
+                                    <button
+                                        class="bg-blue-500 text-white rounded-md px-2 py-1 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Formulario-->
+    <section id="contacto"
+        class="px-6 mt-20 mb-32 md:px-20 max-w-5xl mx-auto bg-white border-2 border-[var(--color-primario)] rounded-lg p-8 shadow-lg flex flex-col md:flex-row gap-12">
+        <div>
+            <p class="mb-1 font-sans text-base antialiased font-semibold text-inherit">Formulario de Reparaciones</p>
+            <p class="font-sans text-sm antialiased text-stone-600">Recuerda que debes ingresar con tu usuario y
+                contraseña para completar el proceso de reparación; de lo contrario, el sistema no reconocerá la
+                transacción.</p>
+            <div class="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Nombres -->
+                <div class="space-y-1">
+                    <label for="first-name"
+                        class="block mb-1 text-sm antialiased font-semibold text-stone-800">Nombres</label>
+                    <input id="first-name" type="text" placeholder="Juan"
+                        class="w-full aria-disabled:cursor-not-allowed outline-none focus:outline-none text-stone-800 dark:text-white placeholder:text-stone-600/60 ring-transparent border border-stone-200 transition-all ease-in disabled:opacity-50 disabled:pointer-events-none select-none text-sm py-2 px-2.5 ring shadow-sm bg-white rounded-lg duration-100 hover:border-stone-300 hover:ring-none focus:border-stone-400 focus:ring-none peer" />
+                </div>
+
+                <!-- Apellidos -->
+                <div class="space-y-1">
+                    <label for="last-name"
+                        class="block mb-1 text-sm antialiased font-semibold text-stone-800">Apellidos</label>
+                    <input id="last-name" type="text" placeholder="Ramirez"
+                        class="w-full aria-disabled:cursor-not-allowed outline-none focus:outline-none text-stone-800 dark:text-white placeholder:text-stone-600/60 ring-transparent border border-stone-200 transition-all ease-in disabled:opacity-50 disabled:pointer-events-none select-none text-sm py-2 px-2.5 ring shadow-sm bg-white rounded-lg duration-100 hover:border-stone-300 hover:ring-none focus:border-stone-400 focus:ring-none peer" />
+                </div>
+
+                <!-- Celular -->
+                <div class="space-y-1">
+                    <label for="phone-number"
+                        class="block mb-1 text-sm antialiased font-semibold text-stone-800">Celular</label>
+                    <input id="phone-number" type="text" placeholder="+57 300 512 34 56"
+                        class="w-full aria-disabled:cursor-not-allowed outline-none focus:outline-none text-stone-800 dark:text-white placeholder:text-stone-600/60 ring-transparent border border-stone-200 transition-all ease-in disabled:opacity-50 disabled:pointer-events-none select-none text-sm py-2 px-2.5 ring shadow-sm bg-white rounded-lg duration-100 hover:border-stone-300 hover:ring-none focus:border-stone-400 focus:ring-none peer" />
+                </div>
+
+
+                <!-- Tipo de prenda -->
+                <div class="justify-around space-y-1">
+                    <label for="Prenda" class="block mb-1 text-sm antialiased font-semibold text-stone-800">Tipo de
+                        donación </label>
+
+                    <div class="dropdown" data-dui-placement="bottom-start">
+
+                        <div class="justify-around space-y-1 ">
+                            <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="bordered-checkbox-1"
+                                class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Camisa</label>
+                        </div>
+                        <div class="justify-center space-y-1 ">
+                            <input checked id="bordered-checkbox-2" type="checkbox" value="" name="bordered-checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="bordered-checkbox-2"
+                                class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Pantalón</label>
+                        </div>
+                        <div class="justify-center space-y-1 ">
+                            <input checked id="bordered-checkbox-2" type="checkbox" value="" name="bordered-checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="bordered-checkbox-2"
+                                class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Falda</label>
+                        </div>
+                        <div class="justify-center space-y-1 ">
+                            <input checked id="bordered-checkbox-2" type="checkbox" value="" name="bordered-checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="bordered-checkbox-2"
+                                class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Chaqueta</label>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex items-center justify-center w-full">
+                <label for="dropzone-file"
+                    class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                        </svg>
+                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Suba foto
+                                de la prenda</span> o arrástrela directamente en este espacio</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG o GIF (MAX. 800x400px)</p>
+                    </div>
+                    <input id="dropzone-file" type="file" class="hidden" />
+                </label>
+            </div>
+
+
+
+            <div>
+                <label for="email" class="block mb-1 text-sm antialiased font-semibold text-stone-800">Descripción del
+                    daño a reparar </label>
+                <textarea id="message" rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Describe lo más explícito posible el estado de la prenda..."></textarea>
+            </div>
+
+
+
+            <!-- Checkbox lugar de entrega -->
+            <div class="space-y-1">
+                <label for="email" class="block mb-1 text-sm antialiased font-semibold text-stone-800">Lugar de
+                    entrega</label>
+
+                <div class="flex items-center border border-gray-200 rounded-sm ps-4 dark:border-gray-700">
+                    <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="bordered-checkbox-1"
+                        class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Colegio</label>
+                </div>
+                <div class="flex items-center border border-gray-200 rounded-sm ps-4 dark:border-gray-700">
+                    <input checked id="bordered-checkbox-2" type="checkbox" value="" name="bordered-checkbox"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="bordered-checkbox-2"
+                        class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Domicilio</label>
+                </div>
+
+                <!-- Direccion de recogida -->
+                <div class="space-y-1 ">
+                    <label for="direccion de recogida"
+                        class="block mb-1 text-sm antialiased font-semibold text-stone-800">Dirección de
+                        domicilio </label>
+                    <input id="confirm-email" type="email" placeholder=" Calle 13 #30-45"
+                        class="w-full aria-disabled:cursor-not-allowed outline-none focus:outline-none text-stone-800 dark:text-white placeholder:text-stone-600/60 ring-transparent border border-stone-200 transition-all ease-in disabled:opacity-50 disabled:pointer-events-none select-none text-sm py-2 px-2.5 ring shadow-sm bg-white rounded-lg duration-100 hover:border-stone-300 hover:ring-none focus:border-stone-400 focus:ring-none peer" />
+                </div>
+
+                <!--Pago de donación en bono-->
+                <div class="w-1/3 space-y-1">
+                    <label for="email" class="block mb-1 text-sm antialiased font-semibold text-stone-800"> Forma de
+                        pago</label>
+
+                    <div class="flex items-center border border-gray-200 rounded-sm ps-4 dark:border-gray-700">
+                        <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="bordered-checkbox-1"
+                            class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Tarjeta
+                            débito </label>
+                    </div>
+
+                    <div class="flex items-center border border-gray-200 rounded-sm ps-4 dark:border-gray-700">
+                        <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="bordered-checkbox-1"
+                            class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Tarjeta
+                            Crédito</label>
+                    </div>
+                    <div class="flex items-center border border-gray-200 rounded-sm ps-4 dark:border-gray-700">
+                        <input checked id="bordered-checkbox-2" type="checkbox" value="" name="bordered-checkbox"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="bordered-checkbox-2"
+                            class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Bono</label>
+                    </div>
+
+                    <!-- Codigo del bono -->
+                    <div class="space-y-1 ">
+                        <label for="first-name"
+                            class="block mb-1 text-sm antialiased font-semibold text-stone-800">Ingrese el código del
+                            bono</label>
+                        <input id="fcodigo bono" type="text" placeholder="Código del bono"
+                            class="w-full aria-disabled:cursor-not-allowed outline-none focus:outline-none text-stone-800 dark:text-white placeholder:text-stone-600/60 ring-transparent border border-stone-200 transition-all ease-in disabled:opacity-50 disabled:pointer-events-none select-none text-sm py-2 px-2.5 ring shadow-sm bg-white rounded-lg duration-100 hover:border-stone-300 hover:ring-none focus:border-stone-400 focus:ring-none peer" />
+                    </div>
+
+
+                    <!--Proveedores-->
+                    <div class="space-y-1 ">
+                        <label for="email" class="block mb-1 text-sm antialiased font-semibold text-stone-800">
+                            Seleccione el proveedor</label>
+
+                        <div class="flex items-center border border-gray-200 rounded-sm ps-4 dark:border-gray-700">
+                            <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="bordered-checkbox-1"
+                                class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Uniformes
+                                Copacabana</label>
+                        </div>
+
+                        <div class="flex items-center border border-gray-200 rounded-sm ps-4 dark:border-gray-700">
+                            <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="bordered-checkbox-1"
+                                class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Bello
+                                Uniformes</label>
+                        </div>
+                        <div class="flex items-center border border-gray-200 rounded-sm ps-4 dark:border-gray-700">
+                            <input checked id="bordered-checkbox-2" type="checkbox" value="" name="bordered-checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="bordered-checkbox-2"
+                                class="w-full py-4 text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Presbitero
+                                costuras</label>
+                        </div>
+
+                        <div>
+                            <button type="button"
+                                class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900">Enviar</button>
+                        </div>
+
+
+
+
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+        <div
+            class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+            <div class="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
+                <a href="index.html"
+                    class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+                    <img src="img/logoo.png" alt="Logo Uni.forme"
+                        class="w-20 h-20 p-1 rounded-full">
+                    <span class="ml-3 text-xl">Uni.forme</span>
+                </a>
+                <p class="mt-2 text-sm text-gray-500">Viste tu esencia. Conserva tu personalidad.</p>
+            </div>
+            <div class="flex flex-wrap flex-grow order-first -mb-10 text-center md:pr-20 md:text-left">
+
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font">Explora</h2>
+                    <nav class="mb-10 list-none">
+                        <li>
+                            <a href="index.html" class="text-gray-600 hover:text-gray-800">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="text-gray-600 hover:text-gray-800">Quienes Somos</a>
+                        </li>
+                        <li>
+                            <a href="catalogo.html" class="text-gray-600 hover:text-gray-800">Uniformes</a>
+                        </li>
+                        <li>
+                            <a href="donar.html"" class="text-gray-600 hover:text-gray-800">Donaciones</a>
+                        </li>
+                        <li>
+                            <a href="catalogo.html" class="text-gray-600 hover:text-gray-800">Catalogo</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="text-gray-600 hover:text-gray-800">Contacto</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-100">
+            <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+                <p class="text-sm text-center text-gray-500 sm:text-left">© 2025 uni.forme · Todos los derechos
+                    reservados
+                    <a href="#" rel="noopener noreferrer" class="text-[#ffd500] ml-1" target="_blank">Política de
+                        privacidad || Términos y condiciones</a>
+                </p>
+                <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                    <a href="#" class="text-[#004080]">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="ml-3 text-[#004080]">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="ml-3 text-[#004080]">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Bar para móviles -->
+    <div
+        class="md:hidden fixed bottom-0 left-0 w-full bg-[var(--color-primario)] border-t-2 border-[var(--color-dos)] flex justify-around py-2 z-50 shadow-lg">
+        <a href="Uniforme_tailwin.html"
+            class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+            <i class="text-lg fa-solid fa-house"></i> Inicio
+        </a>
+        <a href="catalogo.html"
+            class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+            <i class="text-lg fa-solid fa-envelope"></i> Catalogo
+        </a>
+        <a href="#Donar"
+            class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+            <i class="text-lg fa-solid fa-envelope"></i> Donar
+        </a>
+        <a href="#Reparar"
+            class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+            <i class="text-lg fa-solid fa-envelope"></i> Reparar
+        </a>
+    </div>
+
+</body>
+
+</html>

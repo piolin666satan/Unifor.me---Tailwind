@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Pago</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 bg-gray-100">
+
+  <form action="comprobante.html" method="get" class="w-full max-w-lg p-8 space-y-6 bg-white rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold text-center text-gray-800">Información de Pago</h2>
+
+    <!-- Nombre -->
+    <div>
+      <label for="nombre" class="block font-semibold text-gray-700">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required class="w-full px-3 py-2 mt-1 border border-gray-300 rounded" />
+    </div>
+
+    <!-- Correo -->
+    <div>
+      <label for="correo" class="block font-semibold text-gray-700">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required class="w-full px-3 py-2 mt-1 border border-gray-300 rounded" />
+    </div>
+
+    <!-- Selección de método de pago -->
+    <div>
+      <p class="block mb-2 font-semibold text-gray-700">Selecciona el método de pago:</p>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="pago" value="credito" required class="mr-2" />
+        Tarjeta de Crédito
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="pago" value="debito" class="mr-2" />
+        Tarjeta Débito
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="pago" value="pse" class="mr-2" />
+        PSE
+      </label>
+      <label class="flex items-center mb-2">
+        <input type="radio" name="pago" value="efectivo" class="mr-2" />
+        Pago en Efectivo
+      </label>
+    </div>
+
+    <!-- Botón para confirmar -->
+     <form action="Comprobante.html">
+    <button type="submit" class="w-full py-2 font-semibold text-white bg-blue-600 rounded hover:bg-blue-700">
+      Confirmar compra
+    </button>
+    </form>
+  </form>
+
+</body>
+</html>
