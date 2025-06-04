@@ -41,7 +41,7 @@ Con la ayuda de la plataforma de Trello, distribuimos tareas pendientes, en proc
 
 Cada integrante tiene a cargo tareas específicas que se diferencian por colores asignados respectivamente.
 
-![Kanban](trello.png)
+![Kanban](./img/trello.png)
 
 
 ## Diagramas de flujo y casos de uso:
@@ -52,21 +52,21 @@ Se identificaron 5 acciones relevantes y se desarrolló el paso a paso para desg
 
 - Diagramas de flujo:
 
-![Diagrama de flujo](diag1.png)
-![Diagrama de flujo](diag2.png)
-![Diagrama de flujo](diag3.png)
+![Diagrama de flujo](./img/diag1.png)
+![Diagrama de flujo](./img/diag2.png)
+![Diagrama de flujo](./img/diag3.png)
 
 - Casos de uso:
 
-![Caso de uso](caso1.png)
+![Caso de uso](./img/caso1.png)
 
-![Caso de uso](caso2.png)
+![Caso de uso](./img/caso2.png)
 
-![Caso de uso](caso3.png)
+![Caso de uso](./img/caso3.png)
 
-![Caso de uso](caso4.png)
+![Caso de uso](./img/caso4.png)
 
-![Caso de uso](caso5.png)
+![Caso de uso](./img/caso5.png)
 
 
 
@@ -76,9 +76,9 @@ Apoyándonos en los diagramas de flujo y los casos de uso, se procedió a plante
 
 A continuación se evidenciará el código que se ha construido y que eventualente estará inicializado con un método main y métodos alternos para la creación de un menú dentro del IDE de ***Studio Visual Code***.
 
-![código java](cod1.png)
+![código java](./img/cod1.png)
 
-![código java](cod2.png)
+![código java](./img/cod2.png)
 
 
 ## Consola en funcionamiento con Código JAVA.
@@ -87,11 +87,11 @@ En este apartado evidenciaremos cómo funciona la consola a través el código q
 
 **Acá evidenciamos el código sin ser ejecutado:**
 
-![código java](java.png) 
+![código java](./img/java.png) 
 
 **Esta es la forma en cómo se ve la consola cuando ejecutamos el código que mostramos en la imagen previa:**
 
-![código java](java1.png)
+![código java](./img/java1.png)
 
 
 ## NOTA: 
@@ -100,12 +100,12 @@ Es importante tener en cuenta que debemos importar las librerías requeridas par
 
 
 
-![código java](libreriasjava.png)
+![código java](./img/libreriasjava.png)
 
 
 Una de las más utilizadas es el Scanner. Cuando implementamos menú con la ayuda de métodos, podemos determinarlo como parámetro dentro del mismo para reutilizar código aunque en algunos casos genera conflictos y es mejor crear uno por cada método.
 
-![código java](scanner.png)
+![código java](./img/scanner.png)
 
 
 
@@ -117,15 +117,15 @@ A continuación se mostrará las dos propuestas realizadas para el ***FRONT END*
 
 Acá evidenciamos cómo se ve la página con esta configuración de estilo.
 
-![html+css](frontend.png)
+![html+css](./img/frontend.png)
 
 Dentro de la estructura HTML, tenemos dos formatos de código que permiten visualizar la página y todas sus secciones (compra, catálogo, donar). A continuación, encontramos el código CSS que permite que las imágenes del carrusel de la página de inicio tengan un movimiento y se expandan al mover el cursor sobre cada una de ellas.
 
-![html+css](csscarrusel.png)
+![html+css](./img/csscarrusel.png)
 
 Y en esta otra imagen, esta el detalle de la parte del HTML en la misma sección del carrusel.
 
-![html+css](CSSHTML.png)
+![html+css](./img/CSSHTML.png)
 
 ## TAILWIND:
 
@@ -134,15 +134,15 @@ En esta opción encontramos una amplia gama de posibilidades ya que existen en l
 A continuación evidenciamos la implementación del código HTML con **TAILWIND**. Se conservaron los colores iniciales del proyecto para generar unidad gráfica. Sin embargo la configuración de los elementos y la distribución de los mismos es diferente para explorar un nuevo diseño. 
 Para evidenciarlo, mostramos a continuación el paso a paso de cómo se ve la sección del catálogo: 
 
-![tailwind](catalogotail.png)
+![tailwind](./img/catalogotail.png)
 
-![tailwind](catalogo2.png)
+![tailwind](./img/catalogo2.png)
 
-![tailwind](catalogo3.png)
+![tailwind](./img/catalogo3.png)
 
 En cuanto al código, es similar al que se genera con CSS con la diferencia que gracias a sus librerías ya establecidas, es más fácil de crear elementos con características diversas aunque en sí queda bastante extenso.
 
-![tailwind](tailwindcode.png)
+![tailwind](./img/tailwindcode.png)
 
 
 ## TIEMPO DE EJECUCIÓN
@@ -155,6 +155,6 @@ El proyecto se llevó a cabo durante el semestre comprendido entre Febrero y May
 
 
 - [@piolin666satan](https://www.github.com/piolin666satan): Santiago Sánchez Rojas -- Product Owner.
-- [@Malzate1](https://www.github.com/malzate1): Mayra Alejandra Alzate             -- Scrum Master.
+- [@Malzate1](https://www.github.com/malzate1): Mayra Alejandra Alzate Sánchez     -- Scrum Master.
 - [@zamu5555](https://www.github.com/zamu5555) : Samuel Díaz Vanegas               -- Equipo de desarrollo.
 - [@Elgrinch001](https://www.github.com/Elgrinch001) : Santiago Bohorquez Saldaña. -- Equipo de desarrollo.
