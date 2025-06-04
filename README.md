@@ -158,3 +158,10 @@ El proyecto se llevó a cabo durante el semestre comprendido entre Febrero y May
 - [@Malzate1](https://www.github.com/malzate1): Mayra Alejandra Alzate Sánchez     -- Scrum Master.
 - [@zamu5555](https://www.github.com/zamu5555) : Samuel Díaz Vanegas               -- Equipo de desarrollo.
 - [@Elgrinch001](https://www.github.com/Elgrinch001) : Santiago Bohorquez Saldaña. -- Equipo de desarrollo.
+
+
+
+
+## Autor:
+
+- [@Malzate1](https://www.github.com/malzate1): Mayra Alejandra Alzate Sánchez 
